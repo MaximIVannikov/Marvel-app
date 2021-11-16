@@ -91,9 +91,9 @@ class RandomChar extends Component {
 
 const View = ({char}) => {
     const {name, description, thumbnail, wiki, homepage} = char;
-    let imgStyle = {'object-fit' : 'cover'};
+    let imgStyle = {'objectFit' : 'cover'};
     if (thumbnail === 'http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg') {
-        imgStyle = {'object-fit' : 'unset'}
+        imgStyle = {'objectFit' : 'contain'}
         
     }
 
