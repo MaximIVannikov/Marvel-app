@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import PropTypes from 'prop-types';
 import MarvelService from '../../services/MarvelService';
 import ErrorMessage from '../errorMessage/ErrorMessage';
 import Spinner from '../Spinner/Spinner';
@@ -17,6 +18,7 @@ class CharList extends Component {
         charEnded: false
     }
 
+    
 
     marvelService = new MarvelService();
 
@@ -117,6 +119,11 @@ class CharList extends Component {
     }
 
     
+}
+
+
+CharList.protoTypes = { 
+    onCharSelected: PropTypes.func.isRequired
 }
 
 
