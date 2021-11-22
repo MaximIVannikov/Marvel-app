@@ -84,6 +84,7 @@ class CharList extends Component {
             }
             return(
                 <li ref={this.setRef}
+                    tabIndex={0}
                     className="char__item"
                     key={item.id}
                     onClick={() => {this.props.onCharSelected(item.id);
